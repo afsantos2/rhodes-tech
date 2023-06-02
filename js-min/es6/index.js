@@ -1,0 +1,2 @@
+"use strict";addEventListener("DOMContentLoaded",function(){var e=document.querySelector("header"),n=null==e?void 0:e.querySelector(".js-menu-icone"),t=null==e?void 0:e.querySelector(".js-menu-lista"),e=e.querySelector(".botao-fechar");null!=n&&n.addEventListener("click",function(){t.classList.remove("hidden")}),null!=e&&e.addEventListener("click",function(){t.classList.add("hidden")})});
+//# sourceMappingURL=index.js.map
