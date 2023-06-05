@@ -36,39 +36,39 @@
     </header>
     <main class="flex flex-col justify-center lg:max-w-7xl xl:mx-auto">
       <!-- banner slider -->
-      <div class="slider">
-        <div class="relative slides">
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <div class="slide first">
+      <div class="overflow-hidden slider">
+        <div class="relative flex w-[500%] slides">
+          <input type="radio" name="radio-btn" id="radio1" class="hidden">
+          <input type="radio" name="radio-btn" id="radio2" class="hidden">
+          <input type="radio" name="radio-btn" id="radio3" class="hidden">
+          <input type="radio" name="radio-btn" id="radio4" class="hidden">
+          <div class="w-1/5 transition-all duration-500 slide first">
             <img src="src/img/office1.jpg">
           </div>
-          <div class="slide">
+          <div class="w-1/5 transition-all duration-500 slide">
             <img src="src/img/office2.jpg">
           </div>
-          <div class="slide">
+          <div class="w-1/5 transition-all duration-500 slide">
             <img src="src/img/office3.jpg">
           </div>
-          <div class="slide">
+          <div class="w-1/5 transition-all duration-500 slide">
             <img src="src/img/office3.jpg">
           </div>
           <!-- automatic navigation start -->
-          <ul class="navigation-auto">
-            <li class="auto-btn1"></li>
-            <li class="auto-btn2"></li>
-            <li class="auto-btn3"></li>
-            <li class="auto-btn4"></li>
+          <ul class="absolute flex justify-center w-1/5 bottom-7 navigation-auto">
+            <li class="p-[5px] rounded-[10px] transition-all duration-500 mr-6 auto-btn1"></li>
+            <li class="p-[5px] rounded-[10px] transition-all duration-500 mr-6 auto-btn2"></li>
+            <li class="p-[5px] rounded-[10px] transition-all duration-500 mr-6 auto-btn3"></li>
+            <li class="p-[5px] rounded-[10px] transition-all duration-500 auto-btn4"></li>
           </ul>
         </div>
-        <div class="relative">
+        <div class="relative [&:not(:last-child)]:hover:border">
           <!-- manual navigation start -->
-          <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>      
+          <div class="absolute flex justify-center w-full -mt-10 navigation-manual">
+            <label for="radio1" class="border-2 border-white border-solid p-[5px] rounded-[10px] cursor-pointer transition-all duration-500 hover:bg-white hover:bg-opacity-70 mr-5"></label>
+            <label for="radio2" class="border-2 border-white border-solid p-[5px] rounded-[10px] cursor-pointer transition-all duration-500 hover:bg-white hover:bg-opacity-70 mr-5"></label>
+            <label for="radio3" class="border-2 border-white border-solid p-[5px] rounded-[10px] cursor-pointer transition-all duration-500 hover:bg-white hover:bg-opacity-70 mr-5"></label>
+            <label for="radio4" class="border-2 border-white border-solid p-[5px] rounded-[10px] cursor-pointer transition-all duration-500 hover:bg-white hover:bg-opacity-70"></label>      
           </div>
         </div>    
       </div>      
