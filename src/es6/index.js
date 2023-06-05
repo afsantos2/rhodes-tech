@@ -6,27 +6,27 @@
 
   function menuToggle() {
     const header = document.querySelector('header')
-    const menuIcone = header?.querySelector('.js-menu-icone')
-    const menulista = header?.querySelector('.js-menu-lista')
-    const botaoFechar = header.querySelector('.botao-fechar')
+    const menuIcon = header?.querySelector('.js-menu-icon')
+    const menulist = header?.querySelector('.js-menu-list')
+    const closeBtn = header?.querySelector('.close-btn')
   
-    menuIcone?.addEventListener('click', () => {
-      menulista.classList.remove('hidden')
+    menuIcon?.addEventListener('click', () => {
+      menulist.classList.remove('hidden')
     })
   
-    botaoFechar?.addEventListener('click', () => {
-      menulista.classList.add('hidden')
+    closeBtn?.addEventListener('click', () => {
+      menulist.classList.add('hidden')
     })
   }
   
   function bannSlider() {
-    let contador = 1 
+    let count = 1 
 
     setInterval(() => {
-      document.querySelector(`#radio${contador}`).checked = true
-      contador++
-      if (contador > 4) {
-        contador = 1
+      document.querySelector(`#radio${count}`).checked = true
+      count++
+      if (count > 4) {
+        count = 1
       }     
     }, 3000)
   }
