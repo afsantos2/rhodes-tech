@@ -1,5 +1,8 @@
 ;(() => {
-  addEventListener('DOMContentLoaded', menuToggle)
+  addEventListener('DOMContentLoaded', () => {
+    menuToggle()
+    bannSlider()
+  })
 
   function menuToggle() {
     const header = document.querySelector('header')
@@ -14,5 +17,17 @@
     botaoFechar?.addEventListener('click', () => {
       menulista.classList.add('hidden')
     })
-  } 
+  }
+  
+  function bannSlider() {
+    let contador = 1 
+
+    setInterval(() => {
+      document.querySelector(`#radio${contador}`).checked = true
+      contador++
+      if (contador > 4) {
+        contador = 1
+      }     
+    }, 3000)
+  }
 })()
